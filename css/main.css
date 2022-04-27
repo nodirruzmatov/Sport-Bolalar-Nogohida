@@ -999,4 +999,61 @@ img {
             order: -1;
   }
 }
+
+.games {
+  padding: 32px 0 102px 0;
+}
+
+.games__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.games__heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125.34%;
+  text-align: center;
+  color: #558EF7;
+}
+
+.games__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.games__item + .games__item {
+  margin-left: 32px;
+}
+
+@media only screen and (max-width: 505px) {
+  .games {
+    padding-bottom: 16px;
+  }
+  .games__item:nth-child(1) {
+    display: none;
+  }
+  .games__item:nth-child(3) {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
