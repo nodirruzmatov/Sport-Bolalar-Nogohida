@@ -1,0 +1,31 @@
+.header {
+  border-top: 4px solid #7569DE;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(4px);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  width: 100%;
+
+  .header__logo-link {
+    flex-shrink: 0;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header {
+    border: none;
+  }
+}
+
+
+

@@ -1,1 +1,12 @@
-//bu yerda buttonlar yashaydi
+.site-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+  border-radius: 50px;
+  border: 1px solid transparent;
+}

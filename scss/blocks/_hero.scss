@@ -1,0 +1,105 @@
+.hero {
+  max-height: 1163px;
+  height: 100%;
+  padding-bottom: 453px;
+  background-image: url(../../images/back--img.png);
+  background-repeat: no-repeat;
+  background-size: 1719px 1122px;
+  background-position: center top 0px;
+}
+
+.hero__texts {
+  max-width: 586px;
+  margin: 351px 111px 0 54px;
+
+  .hero__heading {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 125.34%;
+    color: #5D748A;
+  }
+
+  .hero__link {
+    padding: 13px 8px;
+    margin-right: 16px;
+    background-image: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
+  }
+
+  .hero__link-two {
+    padding: 13px 48px;
+    color: black;
+    border: 1px solid rgba(254, 162, 68, 1);
+    box-shadow: none;
+  }
+}
+
+// !1300-------------------------------------------------------------
+@media only screen and (max-width: 1300px) {
+  .hero {
+    position: relative;
+  }
+}
+// !1024------------------------------------------------------------
+@media only screen and (max-width: 1024px) {
+  .hero {
+    background-size: 1024px 850px;
+    padding-bottom: 389px;
+  }
+
+  .hero__texts{
+    max-width: 364px;
+    margin: 194px 84px 0 54px;
+
+    .hero__heading {
+      font-size: 26px;
+      line-height: 125.34%;
+      margin-bottom: 40px;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  .hero__texts{
+    & > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero__link {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .hero__link-two {
+      padding: 13px 48px;
+      color: black;
+      border: 1px solid rgba(254, 162, 68, 1);
+      box-shadow: none;
+    }
+    
+
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .hero {
+    background-image: url(../../images/back-mobil-img.png);
+    background-repeat: no-repeat;
+    background-size: 346px 715px;
+    background-position: left 10px top 0;
+  }
+
+  .hero__texts{
+    max-width: 315px;
+    margin: 314px 0 60px 0;  
+    
+    & > div {
+      width: 100%;
+    }
+  }
+
+}
