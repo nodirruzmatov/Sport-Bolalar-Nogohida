@@ -1,6 +1,4 @@
 .hero {
-  max-height: 1163px;
-  height: 100%;
   padding-bottom: 453px;
   background-image: url(../../images/back--img.png);
   background-repeat: no-repeat;
@@ -63,6 +61,10 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .hero {
+    padding-bottom: 60px;
+  }
+
   .hero__texts{
     & > div {
       display: flex;
