@@ -1,0 +1,172 @@
+.rating {
+  padding: 62px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    max-width: 435px;
+    max-height: 417px;
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #558EF7;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    padding: 46px 32px 32px 32px;
+    max-width: 752px;
+    width: 100%;
+    border-radius: 16px;
+    background-color: #fff;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;  
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 688px;
+    padding: 11px 70px 11px 12px;
+    position: relative;
+    border-radius: 12px;
+    background-color: #FFF4E9;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      background-color: #F3F3F3;
+    }
+
+    & + & {
+      margin-top: 29px;
+    }
+  }
+
+
+
+  &__item > div {
+    display: flex;
+  }
+
+  &__user {
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    max-width: 211px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #16233C;
+    
+    & > span {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #467FFF;
+    }
+  }
+
+  &__value {
+    margin: 0 auto;
+  }
+
+  &__value1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #00B527;
+
+    &::before {
+      vertical-align: middle;
+      content: '';
+      margin-right: 14px;
+      display: inline-block;
+      width: 34px;
+      height: 31px;
+      background-image: url(../../images/rating-rigth-2-1.png);
+    }
+  }
+
+  &__value2 {
+    margin: 0;
+    padding: 0;
+    margin-left: 28px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #00B527;
+
+    &::before {
+      vertical-align: middle;
+      content: '';
+      margin-right: 14px;
+      display: inline-block;
+      width: 34px;
+      height: 31px;
+      background-image: url(../../images/rating-right-2-2.png);
+    }
+  }
+
+  &__medal {
+    position: absolute;
+    top: 0;
+    right: 0vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .rating {
+
+    &__value {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__value2 {
+      margin-left: 0;
+    }
+  }
+  
+}
+
+
+@media screen and (max-width: 1024px) {
+  .rating {
+
+    &__heading {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &__item-img {
+      width: 45px;
+      height: 42px;
+    }
+  }  
+  
+}
